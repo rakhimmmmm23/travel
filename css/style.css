@@ -1,0 +1,454 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-image: url('/img/first.jpg');
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-container {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.main {
+  margin-top: 150px;
+  text-align: center;
+  padding-bottom: 300px;
+}
+.tour {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "sonos-logoregular";
+  text-align: center;
+  background: -webkit-linear-gradient(
+    left,
+    #000,
+    #7cfc00,
+    #00bfff,
+    #000,
+    #00bfff
+  );
+  background: linear-gradient(
+    left,
+    #00bfff,
+    #7cfc00,
+    #add8e6,
+    #000,
+    #00bfff
+  );
+  background-size: 3200px 200px;
+  margin-top: 20vh;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: animate-logo;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 7s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  transition: font-size 500ms ease-in-out;
+}
+
+@-webkit-keyframes animate-logo {
+  0% {
+    background-position: 0 3200px;
+  }
+  100% {
+    background-position: 3200px 0;
+  }
+}
+
+.call {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.call {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+.call:before,
+.call:after {
+  position: absolute;
+  content: "Позвонить";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.call:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.call:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.call:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.all-tours {
+  background-image: url("/img/second.jpg");
+  background-position: center;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.tours {
+  padding-top: 30px;
+}
+
+.tours-container {
+  width: 90%;
+  margin: auto;
+}
+
+.tours-title {
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.tours-subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.dubai {
+  max-width: 250px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+}
+
+.egypt {
+  max-width: 250px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+}
+.maldives {
+  max-width: 250px;
+  max-height: 200px;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  flex-direction: column;
+}
+.antaly {
+  max-width: 250px;
+  max-height: 200px;
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.why {
+  background-color: #fff;
+  width: 100vw;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+
+.whyus-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.whycards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.best-img {
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.best-tour-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.best-tour-subtitle {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.posts {
+  padding-top: 60px;
+}
+
+.posts-container {
+  width: 90%;
+  margin: auto;
+}
+.posts-title {
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  font-weight: 700;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.news1 {
+  padding-top: 30px;
+  max-width: 350px;
+}
+
+.news-subtitle {
+  line-height: 1.5em;
+  font-size: 14px;
+  color: #000;
+  margin-top: 15px;
+}
+
+.news-title {
+  margin-top: 15px;
+  color: #000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+.bron{
+  
+  width: 90%;
+  margin: auto;
+}
+
+.bron-cards{
+  padding-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bron-img{
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.bron1-title{
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.bron1-subtitle{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+footer{
+  background-color: #0f74ba;
+  padding-top: 40px;
+}
+
+.footer-container{
+  width: 90%;
+  margin: auto;
+}
+
+.footer-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+
+}
+.about{
+    width: 300px;
+}
+
+.about-title{
+  font-size: 21px;
+  color: #fff;
+  font-weight: 700;
+}
+.about-subtitle{
+  font-weight:400;
+  font-size: 15px;
+  color: #add8e6;
+}
+
+.about-tours{
+  color: #fff;
+}
+
+.about-tours-title{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.mald{
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.paymethods{
+  color:#fff
+}
+
+@media(max-width:1115px){
+  .menu-item{
+    display: none;
+  }
+  .dubai{
+    width: 200px;
+    height:100px;
+    padding-bottom: 30px;
+    
+  }
+  .egypt{
+    width: 200px;
+    height:100px;
+    padding-bottom: 30px;
+  }
+  .maldives{
+    width: 200px;
+    height:100px;
+    padding-bottom: 30px;
+  }
+  .antaly{
+    width: 200px;
+    height:100px;
+    padding-bottom: 30px;
+  }
+}
+
+@media(max-width:869px){
+  .whycards{
+    flex-direction: column;
+  }
+
+  .best-tour{
+    margin-top: 20px;
+  }
+  .cards{
+    flex-direction: column;
+    
+  }
+  .dubai{
+    padding-bottom: 45px;
+  }
+  .egypt{
+    padding-bottom: 45px;
+
+  }
+  .maldives{
+    padding-bottom: 45px;
+  }
+  .antaly{
+    padding-bottom: 45px;
+  }
+  .news{
+    flex-direction: column;
+  }
+  .why{
+    background:none;
+  }
+  .bron-cards{
+    flex-direction: column;
+    
+  }
+ .footer-group{
+   flex-direction: column;
+   text-align: center;
+
+ }
+ .about{
+   margin-bottom: 20px;
+ }
+ .about-tours{
+   margin-top: 20px;
+   margin-bottom: 30px;
+ }
+  .bron1{
+    padding-top: 35px;
+  }
+ 
+}
+
+.icons{
+  display: flex;
+}
